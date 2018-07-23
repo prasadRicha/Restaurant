@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+  }
+  .filter{
+    height: 100%;
+    width: 100%;
+  }
+  .filter_align{
+    text-align: right;
+  }
+  .addnew{
+    text-align: right;
+  }

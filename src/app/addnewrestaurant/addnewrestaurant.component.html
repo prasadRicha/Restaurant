@@ -1,0 +1,59 @@
+<div style="position: absolute;left: 35%;top: 40%;">
+    <div class="row">
+        <div class="col-sm-6">
+            <button data-toggle="modal" data-target="#myModal" class="btn btn-primary">Add New Restaurant</button>
+        </div>
+        <div class="col-sm-6">
+            <button (click)="onClick()" class="btn btn-primary">Show RestaurantList</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add New Restaurant</h4>
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Name:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="name" id="name" [(ngModel)]="restaurant.name">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Address:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="Address" id="Address" [(ngModel)]="restaurant.address">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Deal:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="Deal" id="Deal" [(ngModel)]="restaurant.deal">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" (click)="addnewrestaurant()">Save</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
