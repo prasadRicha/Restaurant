@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-addnewrestaurant',
   templateUrl: './addnewrestaurant.component.html',
-  styleUrls: ['./addnewrestaurant.component.css'],
   providers: [RestaurantService]
 })
 export class AddnewrestaurantComponent implements OnInit {
